@@ -1,0 +1,2965 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="pingback" href="xmlrpc.html" />
+    <title>Sangit Pokhrel &#8211; Personal Portfolio</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="dns-prefetch" href="http://www.googletagmanager.com/" />
+    <link rel="dns-prefetch" href="http://s3-us-west-2.amazonaws.com/" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="keira &raquo; Feed"
+      href="feed/index.html"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="keira &raquo; Comments Feed"
+      href="comments/feed/index.html"
+    />
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/keira.inaikas.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=e958f168a43ce617ce982ec1c51b630c",
+        },
+      };
+
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
+                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+      /* ]]> */
+    </script>
+    <style id="wp-emoji-styles-inline-css" type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="contact-form-7-css"
+      href="wp-content/plugins/contact-form-7/includes/css/styles38d6.css?ver=5.8.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bootstrapcss-css"
+      href="wp-content/themes/keira/css/bootstrapac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fontawesomecss-css"
+      href="wp-content/themes/keira/css/font-awesomeac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fontscss-css"
+      href="wp-content/themes/keira/css/fontsac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="uniconscss-css"
+      href="../s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/uniconsac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="animatecss-css"
+      href="wp-content/themes/keira/css/animateac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hovercss-css"
+      href="wp-content/themes/keira/css/hover-minac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="magnificpopupcss-css"
+      href="wp-content/themes/keira/css/magnific-popupac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="homepages-css"
+      href="wp-content/themes/keira/css/homepagesac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bg-css"
+      href="wp-content/themes/keira/css/default_bgac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="color-css"
+      href="wp-content/themes/keira/css/default_colorac18.css?ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="keira-google-fonts-css"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;family=Nunito:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-icons-css"
+      href="wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min50c3.css?ver=5.27.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="wp-content/plugins/elementor/assets/css/frontend.min34a7.css?ver=3.19.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="swiper-css"
+      href="wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min48f5.css?ver=5.3.6"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-6-css"
+      href="wp-content/uploads/elementor/css/post-68846.css?ver=1707846030"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-global-css"
+      href="wp-content/uploads/elementor/css/global8846.css?ver=1707846030"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-16-css"
+      href="wp-content/uploads/elementor/css/post-168846.css?ver=1707846030"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=e958f168a43ce617ce982ec1c51b630c"
+      type="text/css"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/typedac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="typedjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/wow.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="Wowjs-js"
+    ></script>
+
+    <link rel="https://api.w.org/" href="wp-json/index.html" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="wp-json/wp/v2/pages/16.json"
+    />
+    <link rel="canonical" href="index.html" />
+    <link rel="shortlink" href="index.html" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="wp-json/oembed/1.0/embeda100.json?url=https%3A%2F%2Fkeira.inaikas.com%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="wp-json/oembed/1.0/embed70c9?url=https%3A%2F%2Fkeira.inaikas.com%2F&amp;format=xml"
+    />
+    <meta name="generator" content="Site Kit by Google 1.120.0" />
+    <script type="text/javascript">
+      (function (url) {
+        if (
+          /(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(
+            navigator.userAgent
+          )
+        ) {
+          return;
+        }
+        var addEvent = function (evt, handler) {
+          if (window.addEventListener) {
+            document.addEventListener(evt, handler, false);
+          } else if (window.attachEvent) {
+            document.attachEvent("on" + evt, handler);
+          }
+        };
+        var removeEvent = function (evt, handler) {
+          if (window.removeEventListener) {
+            document.removeEventListener(evt, handler, false);
+          } else if (window.detachEvent) {
+            document.detachEvent("on" + evt, handler);
+          }
+        };
+        var evts =
+          "contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll".split(
+            " "
+          );
+        var logHuman = function () {
+          if (window.wfLogHumanRan) {
+            return;
+          }
+          window.wfLogHumanRan = true;
+          var wfscr = document.createElement("script");
+          wfscr.type = "text/javascript";
+          wfscr.async = true;
+          wfscr.src = url + "&r=" + Math.random();
+          (
+            document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0]
+          ).appendChild(wfscr);
+          for (var i = 0; i < evts.length; i++) {
+            removeEvent(evts[i], logHuman);
+          }
+        };
+        for (var i = 0; i < evts.length; i++) {
+          addEvent(evts[i], logHuman);
+        }
+      })(
+        "indexd926.html?wordfence_lh=1&amp;hid=4ED16519D71D5647F56A997147E20F31"
+      );
+    </script>
+    <style type="text/css">
+      ::-webkit-scrollbar-thumb {
+        background: ;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: ;
+      }
+
+      ::-webkit-selection {
+        background: ;
+      }
+
+      ::-moz-selection {
+        background: ;
+      }
+
+      ::selection {
+        background: ;
+      }
+
+      a:hover,
+      a:focus,
+      .fa:hover,
+      .navbar-header .navbar-brand span,
+      .navbar-inverse .navbar-nav li a:hover,
+      .navbar-inverse .navbar-nav li a:focus,
+      .portfolio .portfolio-list .nav li:hover,
+      .nav-styletwo
+        .navbar
+        .navbar-collapse
+        .navbar-nav
+        .nav-item
+        .nav-link.active,
+      .contact .contact-block1 .contact-block .fa,
+      .counter .fullcounter h3 sup,
+      .error,
+      .navbar-wrapper .mainmenunav .navbar .navbar-collapse li a:hover ~ p,
+      .navbar-wrapper .mainmenunav .navbar .navbar-collapse li a:hover,
+      .navbar-wrapper
+        .mainmenunav
+        .navbar
+        .navbar-collapse
+        li.menu-item-has-children
+        > a:hover:after,
+      .services .cont-services .servfix:hover .read-more,
+      .services .cont-services .servfix:hover .read-more i,
+      .journal .journal-info .journal-txt .maintitle:hover,
+      .breadcrumb-header ul li a,
+      .sidebar .widget.widget_search .search-submit,
+      .sidebar .widget.widget_search .search-submit i:hover,
+      .sidebar .widget.widget_categories ul li,
+      .sidebar .widget.widget_categories ul li a:hover,
+      .sidebar
+        .widget.widget_recent_entries_thumbnail
+        ul
+        .thumbnail-post-w
+        .widget-data
+        h4
+        a:hover,
+      .sidebar
+        .widget.widget_recent_entries_thumbnail
+        ul
+        .thumbnail-post-w
+        .widget-data
+        .thumbnail-post-w-date
+        a:hover,
+      .search-widget .search-submit,
+      .journal.blog .journal-item .post-date,
+      .journal.blog.single .comments .comments-list .reply .comment-reply-link,
+      .journal.blog.single
+        .comments
+        .comment-respond
+        .comment-reply-title
+        #cancel-comment-reply-link,
+      
+      .navbar-wrapper .mainmenunav .navbar .navbar-collapse li a:hover,
+      .navbar .sub-menu li:hover,
+      .navbar .sub-menu li:focus,
+      .navbar .sub-menu li:hover a,
+      .navbar-wrapper
+        .mainmenunav
+        .navbar
+        .navbar-collapse
+        li.menu-item-has-children
+        .sub-menu
+        li:hover
+        a,
+      .navbar-wrapper
+        .mainmenunav
+        .navbar
+        .navbar-collapse
+        li.menu-item-has-children
+        .sub-menu
+        li
+        a:hover,
+      .nav-styletwo .navbar .navbar-collapse .navbar-nav .menu-item a:hover,
+      .dl-fixed-sidebar .dl-menu-fixed ul li:hover a,
+      .dl-fixed-sidebar .dl-menu-fixed ul li a.active,
+      .services .cont-services .servfix:hover .read-more,
+      .services .cont-services .servfix:hover .read-more i,
+      .error {
+        color: none !important;
+      }
+
+      @media (max-width: 991px) {
+        .nav-styletwo
+          .navbar
+          .navbar-collapse
+          .navbar-nav
+          .nav-item
+          .nav-link.active,
+        .nav-styletwo .navbar .navbar-collapse .navbar-nav .nav-item a.active,
+        .nav-styletwo .navbar .navbar-collapse .navbar-nav .menu-item a:hover {
+          color: none !important;
+        }
+      }
+
+      .about .about-blok .aboutinfo .about-img:after,
+      .btn:hover,
+      .btn:focus,
+      .section-title h2:before,
+      .section-title h2:after,
+      .cd-overlay-content span,
+      .nav-styletwo .navbar .menu-toggle .bar,
+      .dl-burger-menu,
+      .dl-fixed-sidebar .dl-menu-fixed ul li .active:after,
+      .about .skills-bar-container li .bar-container .progressbar,
+      .team .teamiteam .imgteam .socials-media ul li:hover,
+      #contact .socials-media ul li:hover,
+      .overlay-2,
+      .mainicon.sidebaricon,
+      .nav-styletwo .menu-toggle .bar,
+      .list-color li span[data-color="default"],
+      .about:before,
+      .services:before,
+      .portfolio:before,
+      .resume:before,
+      .team:before,
+      .journal:before,
+      .contact:before,
+      .about .about-blok .aboutinfo .about-img:after,
+      .res-line,
+      .pagination-numbers .page-numbers.current,
+      .pagination-numbers .page-numbers:hover,
+      .sidebar .widget.widget_tag_cloud .tagcloud a:hover,
+      .journal.blog.single .journal-item .post-footer .post-tags a:hover,
+      .journal.blog.single .post-navigation .post-navigation-prev a:hover,
+      .journal.blog.single .post-navigation .post-navigation-next a:hover {
+        background: none;
+      }
+
+      .about .about-blok .aboutinfo .about-img:after {
+        background: none !important;
+      }
+
+      .dl-fixed-sidebar .line:after,
+      #footer .line:before {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(255, 255, 255, 0)),
+          color-stop(75%),
+          to()
+        ) !important;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0,
+          75%
+        ) !important;
+      }
+
+      .form-control:focus,
+      .navbar-inverse .navbar-collapse,
+      .navbar-inverse .navbar-form,
+      .sidebar-contet .contentsidebar .themecolor .list-sidebar li span.active,
+      .mainicon.sidebaricon,
+      .sidebar-contet .contentsidebar .themecolor .list-sidebar li a.active,
+      .sidebar .widget.widget_search .search-field:focus,
+      .search-widget .search-field:focus,
+      .journal.blog.single
+        .comments
+        .comment-respond
+        .comment-form
+        input[type="text"]:focus,
+      .journal.blog.single
+        .comments
+        .comment-respond
+        .comment-form
+        textarea:focus {
+        border-color: none !important;
+      }
+
+      .draw:hover:before {
+        border-top-color: none !important;
+        border-right-color: none !important;
+      }
+      .draw:hover:after {
+        border-bottom-color: none !important;
+        border-left-color: none !important;
+      }
+
+      body.home {
+        overflow: hidden;
+      }
+      .content {
+        transform: translate(0, -54%);
+      }
+
+      .navbar-wrapper
+        .navfixed
+        .container
+        .fullcontainer
+        .row
+        .col-md-12
+        .mylogo
+        img {
+        width: 100px;
+      }
+    </style>
+
+    <meta
+      name="generator"
+      content="Elementor 3.19.2; features: e_optimized_assets_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto"
+    />
+    <link
+      rel="icon"
+      href="wp-content/uploads/2022/11/favicon-60x60.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="wp-content/uploads/2022/11/favicon.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="wp-content/uploads/2022/11/favicon.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://keira.inaikas.com/wp-content/uploads/2022/11/favicon.png"
+    />
+  </head>
+  <body
+    data-rsssl="1"
+    class="home page-template-default page page-id-16 wp-custom-logo elementor-default elementor-kit-6 elementor-page elementor-page-16"
+  >
+    <section class="site-content">
+      <!-- start cursor -->
+
+      <div class="cursor"></div>
+
+      <!-- End  Cursor -->
+
+      <!-- start section navbar -->
+
+      <div class="navbar-wrapper none-sq-price">
+        <div class="navfixed">
+          <div class="container">
+            <div class="fullcontainer">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mylogo">
+                    <a class="logo logo-light" href="index.html">
+                      <img
+                        src="wp-content/uploads/2021/03/sangit.png"
+                        alt="Sangit Pokhrel"
+                      />
+                    </a>
+                  </div>
+                  <div class="iconfix">
+                    <a href="#" class="cd-nav-trigger" onclick="return false;"
+                      >Menu<span class="cd-icon"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainmenunav">
+          <div class="cd-primary-nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="navbar-collapse">
+                      <ul id="menu-navbar" class="navbar-nav">
+                        <li
+                          id="menu-item-987"
+                          class="menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-987"
+                        >
+                          <a href="#">Home</a>
+                        </li>
+                        <li
+                          id="menu-item-306"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"
+                        >
+                          <a href="about/index.html">About Me</a>
+                        </li>
+                        <li
+                          id="menu-item-866"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866"
+                        >
+                          <a href="services/index.html">Services</a>
+                        </li>
+                        <li
+                          id="menu-item-1039"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1039"
+                        >
+                          <a href="resume/index.html">Resume</a>
+                        </li>
+                        <li
+                          id="menu-item-304"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"
+                        >
+                          <a href="portfolio/index.html">Portfolio</a>
+                        </li>
+                        <li
+                          id="menu-item-865"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-865"
+                        >
+                          <a href="team/index.html">Projects</a>
+                        </li>
+                        <li
+                          id="menu-item-794"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-794"
+                        >
+                          <a href="blog/index.html">Blogs</a>
+                        </li>
+                        <li
+                          id="menu-item-305"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"
+                        >
+                          <a href="contact/index.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                <div class="col-md-6">
+                  <div class="navinfo">
+                    <div class="navfixinfo">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="testtest">
+                            <div class="contact-block">
+                              <h4 class="maintitle">EMAIL</h4>
+                              <span class="email">spokhrel.dev@gmail.com</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="testtest">
+                            <div class="contact-block">
+                              <h4 class="maintitle">CALL US</h4>
+                              <span class="tel"
+                                >(+977) 9868618385 / (+977) 9827691222</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="testtest">
+                            <div class="contact-block">
+                              <h4 class="maintitle">ADDRESS</h4>
+                              <span class="address"
+                                >Kathmandu-29, Ghattekulo 22604 Arniko
+                                Marg</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End section navbar -->
+
+      <!-- start section overlay site web -->
+
+      <div class="overlay-1">
+        <p class="screen">Enter Now ?</p>
+        <div class="intro">
+          <button class="myBtn" onclick="fadeOut()">Sangit Portfolio</button>
+        </div>
+      </div>
+      <div class="overlay-2"></div>
+
+      <!-- End section overlay site web -->
+
+      <!-- start section header follow -->
+
+      <div class="header-follow">
+        <ul>
+          <li>
+            <a
+              class="facebook"
+              href="https://www.facebook.com/sangit.artova"
+              target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/aw.sike"
+              target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a class="instagram" href="#"
+              ><i class="fa fa-linkedin" target="_blank"></i
+            ></a>
+          </li>
+        </ul>
+        <p>Follow Me</p>
+      </div>
+
+      <!-- End section header follow -->
+
+      <!-- start section content -->
+      <main class="cd-content content">
+        <!-- start section stripe -->
+        <div class="stripe">
+          <div class="line-stripe-0"></div>
+          <div class="line-stripe-1"></div>
+          <div class="line-stripe-2"></div>
+          <div class="line-stripe-3"></div>
+          <div class="line-stripe-4"></div>
+        </div>
+        <!-- End section stripe -->
+        <div
+          data-elementor-type="wp-page"
+          data-elementor-id="16"
+          class="elementor elementor-16"
+        >
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-f73d800 elementor-section-full_width elementor-section-height-full elementor-section-content-middle elementor-section-stretched home elementor-section-height-default elementor-section-items-middle"
+            data-id="f73d800"
+            data-element_type="section"
+            data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1cc819"
+                data-id="a1cc819"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-5cfa78c elementor-widget elementor-widget-keira-header"
+                    data-id="5cfa78c"
+                    data-element_type="widget"
+                    data-widget_type="keira-header.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div
+                        id="fullheader"
+                        class="fullheader"
+                        data-scroll-index="0"
+                      >
+                        <div class="bgonetwo"></div>
+                        <div id="header">
+                          <div class="container">
+                            <div class="head-info">
+                              <div class="header-content">
+                                <span class="subtitle"
+                                  >I Am Sangit Pokhrel</span
+                                >
+                                <span
+                                  id="typed-slide-1"
+                                  class="h1 textfull"
+                                ></span>
+                                <div class="location">
+                                  <ul class="listlocaion list-unstyled">
+                                    <li>
+                                      <span class="paye">Dang</span>
+                                      <span class="ville"
+                                        >Rapti-Rm 3, Lattahahawa</span
+                                      >
+                                    </li>
+                                    <li>
+                                      <span class="paye">Dang</span>
+                                      <span class="ville"
+                                        >Ghorahi-30, Nawalpur</span
+                                      >
+                                    </li>
+                                    <li>
+                                      <span class="paye">Kathmandu</span>
+                                      <span class="ville"
+                                        >Kathmandu-29, Ghattekulo</span
+                                      >
+                                    </li>
+
+                                  </ul>
+                                  <a
+                                  href="https://wa.me/+9779868618385"
+                                  class="btn draw"
+                                  style="margin-top: 60px;"
+                                  target="_blank"
+                                  >Hire Me <i class="fa fa-angle-right"></i>
+                                </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="scroll-icon">
+                          <a href="#about" class="smoothscroll">
+                            <div class="mouse"></div>
+                          </a>
+                          <div class="end-top"></div>
+                        </div>
+                      </div>
+
+                      <script>
+                        var typed = new Typed("#typed-slide-1", {
+                          strings: [
+                            "Designer",
+                            "Full Stack Developer",
+                            "Js Enthusiast",
+                            "Teacher",
+                            "Versatile",
+                            "Multi-talented",
+                            "Leadership Skill",
+                          ],
+                          typeSpeed: 60,
+                          backSpeed: 60,
+                          loop: true,
+                        });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-bdf7319 elementor-section-stretched about text-center pt-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="bdf7319"
+            data-element_type="section"
+            id="about"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4406ed4"
+                data-id="4406ed4"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-f26b6fb elementor-widget elementor-widget-keira-main-title"
+                    data-id="f26b6fb"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="section-title">
+                          <h2>About Me</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-edc6f8a elementor-widget elementor-widget-keira-about"
+                    data-id="edc6f8a"
+                    data-element_type="widget"
+                    data-widget_type="keira-about.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="about-blok">
+                          <div class="row">
+                            <div class="aboutinfo">
+                              <div class="col-md-12 col-lg-6">
+                                <div class="about-img">
+                                  <img
+                                    decoding="async"
+                                    src="wp-content/uploads/2021/02/sangit.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-12 col-lg-6">
+                                <div class="about-descr text-left">
+                                  <h3 class="title">
+                                    Hello, Im Sangit Pokhrel
+                                  </h3>
+                                  <p class="separator text-justify">
+                                    Howdy! I'm a developer with loads of skills.
+                                    I know all sorts of tech stuff like Python,
+                                    JavaScript, HTML, CSS, and React.js. You
+                                    name it, I've probably tinkered with it! I'm
+                                    like a Swiss Army knife when it comes to
+                                    coding – versatile and ready for anything.
+                                    Plus, I'm familiar with databases like
+                                    MongoDB and SQL, so I've got you covered on
+                                    the data front too. Whether it's crafting
+                                    sleek websites or diving into complex
+                                    backend systems, I'm your go-to person.
+                                    Let's turn those ideas into reality
+                                    together!
+                                  </p>
+                                  <ul
+                                    class="skills-bar-container list-unstyled"
+                                  >
+                                    <li>
+                                      <div class="progressbar-title">
+                                        <h3>HTML,CSS,JS</h3>
+                                        <span class="percent">100%</span>
+                                      </div>
+                                      <div class="bar-container">
+                                        <span
+                                          class="progressbar progressred"
+                                          data-value="100"
+                                        ></span>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="progressbar-title">
+                                        <h3>React js And Node Js</h3>
+                                        <span class="percent">90%</span>
+                                      </div>
+                                      <div class="bar-container">
+                                        <span
+                                          class="progressbar progressred"
+                                          data-value="90"
+                                        ></span>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="progressbar-title">
+                                        <h3>Database</h3>
+                                        <span class="percent">100%</span>
+                                      </div>
+                                      <div class="bar-container">
+                                        <span
+                                          class="progressbar progressred"
+                                          data-value="100"
+                                        ></span>
+                                      </div>
+                                    </li>
+
+                                    <li>
+                                      <div class="progressbar-title">
+                                        <h3>Python & Django</h3>
+                                        <span class="percent">100%</span>
+                                      </div>
+                                      <div class="bar-container">
+                                        <span
+                                          class="progressbar progressred"
+                                          data-value="100"
+                                        ></span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <a
+                                    href="https://wa.me/+9779868618385"
+                                    class="btn draw"
+                                    target="_blank"
+                                    >Hire Me <i class="fa fa-angle-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <script>
+                        (function ($) {
+                          var multiply = 2;
+                          function skillsProgress() {
+                            $(".bar-container").each(function () {
+                              var delay = 600,
+                                progressBar = $(this).find(".progressbar");
+                              setTimeout(function () {
+                                progressBar.animate(
+                                  {
+                                    width: progressBar.attr("data-value") + "%",
+                                  },
+                                  600
+                                );
+                              }, delay * multiply);
+
+                              multiply++;
+                            });
+                          }
+
+                          skillsProgress();
+                        })(jQuery);
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-caf43de elementor-section-stretched services pt-90 text-center elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="caf43de"
+            data-element_type="section"
+            id="services"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-68f6d43"
+                data-id="68f6d43"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-0d972b3 elementor-widget elementor-widget-keira-main-title"
+                    data-id="0d972b3"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="section-title">
+                          <h2>Services</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-2cbad69 elementor-widget elementor-widget-keira-service"
+                    data-id="2cbad69"
+                    data-element_type="widget"
+                    data-widget_type="keira-service.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="cont-services text-left">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-4 services-item">
+                              <div class="servfix r-mb-30">
+                                <div class="services-block draw">
+                                  <figure class="image-box-img">
+                                    <a href="#">
+                                      <img
+                                        decoding="async"
+                                        src="wp-content/uploads/2021/02/service_icon2.png"
+                                        class="attachment-full size-full"
+                                        alt=""
+                                      />
+                                    </a>
+                                  </figure>
+                                  <h4 class="maintitle">
+                                    Custom Software Solutions:
+                                  </h4>
+                                  <p class="separator">
+                                    End-to-end development expertise in web
+                                    applications using modern tech stacks.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 services-item">
+                              <div class="servfix r-mb-30">
+                                <div class="services-block draw">
+                                  <figure class="image-box-img">
+                                    <a href="#">
+                                      <img
+                                        decoding="async"
+                                        src="wp-content/uploads/2021/02/website.png"
+                                        class="attachment-full size-full"
+                                        alt=""
+                                      />
+                                    </a>
+                                  </figure>
+                                  <h4 class="maintitle">Web Development:</h4>
+                                  <p class="separator">
+                                    Crafting custom websites with HTML, CSS,
+                                    JavaScript, and React.js for impactful
+                                    online presence.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 services-item">
+                              <div class="servfix r-mb-30">
+                                <div class="services-block draw">
+                                  <figure class="image-box-img">
+                                    <a href="#">
+                                      <img
+                                        decoding="async"
+                                        src="wp-content/uploads/2021/02/code.png"
+                                        class="attachment-full size-full"
+                                        alt=""
+                                      />
+                                    </a>
+                                  </figure>
+                                  <h4 class="maintitle">
+                                    Full-Stack Solutions:
+                                  </h4>
+                                  <p class="separator">
+                                    End-to-end development expertise in Python,
+                                    JavaScript, SQL, and MongoDB.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-f764443 elementor-section-stretched counter text-center pt-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="f764443"
+            data-element_type="section"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-89d63f2"
+                data-id="89d63f2"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-4c53e69 elementor-widget elementor-widget-keira-fact"
+                    data-id="4c53e69"
+                    data-element_type="widget"
+                    data-widget_type="keira-fact.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="fullcounter" id="counter">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-4 brd brdnone">
+                              <div class="itemcounter r-mb-30">
+                                <h3>
+                                  <span class="counter-value" data-count="7"
+                                    >0</span
+                                  ><sup>+</sup>
+                                </h3>
+                                <h4 class="maintitle">Happy Client</h4>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 brd brdnone">
+                              <div class="itemcounter r-mb-30">
+                                <h3>
+                                  <span class="counter-value" data-count="10"
+                                    >0</span
+                                  ><sup>+</sup>
+                                </h3>
+                                <h4 class="maintitle">Successful Project</h4>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 brd brdnone">
+                              <div class="itemcounter r-mb-30">
+                                <h3>
+                                  <span class="counter-value" data-count="100"
+                                    >0</span
+                                  ><sup>+</sup>
+                                </h3>
+                                <h4 class="maintitle">Personal Projects</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <script>
+                        (function ($) {
+                          "use strict";
+
+                          var a = 0;
+                          $(window).on("scroll", function () {
+                            var oTop =
+                              $(".counter").offset().top - window.innerHeight;
+                            if (a == 0 && $(window).scrollTop() > oTop) {
+                              $(".counter-value").each(function () {
+                                var $this = $(this),
+                                  countTo = $this.attr("data-count");
+                                $({
+                                  countNum: $this.text(),
+                                }).animate(
+                                  {
+                                    countNum: countTo,
+                                  },
+
+                                  {
+                                    duration: 7000,
+                                    easing: "swing",
+                                    step: function () {
+                                      $this.text(Math.floor(this.countNum));
+                                    },
+                                    complete: function () {
+                                      $this.text(this.countNum);
+                                    },
+                                  }
+                                );
+                              });
+                              a = 1;
+                            }
+                          });
+                        })(jQuery);
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-83ff01b elementor-section-stretched portfolio pt-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="83ff01b"
+            data-element_type="section"
+            id="portfolio"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aa00d4b"
+                data-id="aa00d4b"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-0ba8339 elementor-widget elementor-widget-keira-portfolio-main-title"
+                    data-id="0ba8339"
+                    data-element_type="widget"
+                    data-widget_type="keira-portfolio-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="section-title">
+                              <h2>Projects</h2>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="allprojecrt r-mb-30">
+                              <a href="#" class="btn draw"
+                                >all project <i class="fa fa-angle-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-9a3f682 elementor-widget elementor-widget-keira-portfolio"
+                    data-id="9a3f682"
+                    data-element_type="widget"
+                    data-widget_type="keira-portfolio.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="portfolio-item">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                              <div class="portfolio-thumbnail">
+                                <div class="top-thumbnail">
+                                  <a href="#">
+                                    <img
+                                      decoding="async"
+                                      src="wp-content/uploads/2021/02/13.jpg"
+                                      class="img-responsive"
+                                      alt="portfolio"
+                                    />
+                                  </a>
+                                  <div class="overlay">
+                                    <div class="content-port">
+                                      <a
+                                        class="popup-img icons-fonts ti-zoom-in fa fa-eye"
+                                        href="https://www.cmarga.com"
+                                      >
+                                        <img
+                                          decoding="async"
+                                          src="wp-content/uploads/2021/02/13.jpg"
+                                          class="img-responsive"
+                                          alt="portfolio"
+                                        />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="botom-thumbnail"  style="color: black;">
+                                  <h4 class="maintitle"  style="color: black;">CMarga Pvt Ltd</h4>
+                                  <p class="separator"  style="color: black;">Real State (react js)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                              <div class="portfolio-thumbnail">
+                                <div class="top-thumbnail">
+                                  <a href="#">
+                                    <img
+                                      decoding="async"
+                                      src="wp-content/uploads/2021/02/14.jpg"
+                                      class="img-responsive"
+                                      alt="portfolio"
+                                    />
+                                  </a>
+                                  <div class="overlay">
+                                    <div class="content-port">
+                                      <a
+                                        class="popup-img icons-fonts ti-zoom-in fa fa-eye"
+                                        href="https://www.dfhl.com.au"
+                                      >
+                                        <img
+                                          decoding="async"
+                                          src="wp-content/uploads/2021/02/14.jpg"
+                                          class="img-responsive"
+                                          alt="portfolio"
+                                        />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="botom-thumbnail"  style="color: black;">
+                                  <h4 class="maintitle" style="color: black;">
+                                    DFHL- destiny finance & home loand
+                                  </h4>
+                                  <p class="separator" style="color: black;">
+                                    Finance Company & Mortagage Provider In
+                                    Australlia
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4">
+                              <div class="portfolio-thumbnail">
+                                <div class="top-thumbnail">
+                                  <a href="#">
+                                    <img
+                                      decoding="async"
+                                      src="wp-content/uploads/2021/02/15.jpg"
+                                      class="img-responsive"
+                                      alt="portfolio"
+                                    />
+                                  </a>
+                                  <div class="overlay">
+                                    <div class="content-port">
+                                      <a
+                                        class="popup-img icons-fonts ti-zoom-in fa fa-eye"
+                                        href="https://www.keiraworkspace.com"
+                                      >
+                                        <img
+                                          decoding="async"
+                                          src="wp-content/uploads/2021/02/15.jpg"
+                                          class="img-responsive"
+                                          alt="portfolio"
+                                        />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="botom-thumbnail"  style="color: black;">
+                                  <h4 class="maintitle" style="color: black;">Artova Solutions</h4>
+                                  <p class="separator" style="color: black;">
+                                    Software Company In Nepal
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4">
+                              <div class="portfolio-thumbnail">
+                                <div class="top-thumbnail">
+                                  <a href="#">
+                                    <img
+                                      decoding="async"
+                                      src="wp-content/uploads/2021/02/8-scaled-1.jpg"
+                                      class="img-responsive"
+                                      alt="portfolio"
+                                    />
+                                  </a>
+                                  <div class="overlay">
+                                    <div class="content-port">
+                                      <a
+                                        class="popup-img icons-fonts ti-zoom-in fa fa-eye"
+                                        href="https://www.bitmoro.com"
+                                      >
+                                        <img
+                                          decoding="async"
+                                          src="wp-content/uploads/2021/02/8-scaled-1.jpg"
+                                          class="img-responsive"
+                                          alt="portfolio"
+                                        />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="botom-thumbnail"  style="color: black;">
+                                  <h4 class="maintitle" style="color: black;">Bitmoro Pvt Ltd</h4>
+                                  <p class="separator" style="color: black;">Hosting Provider</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4">
+                              <div class="portfolio-thumbnail">
+                                <div class="top-thumbnail">
+                                  <a href="#">
+                                    <img
+                                      decoding="async"
+                                      src="wp-content/uploads/2021/02/16.jpg"
+                                      class="img-responsive"
+                                      alt="portfolio"
+                                    />
+                                  </a>
+                                  <div class="overlay">
+                                    <div class="content-port">
+                                      <a
+                                        class="popup-img icons-fonts ti-zoom-in fa fa-eye"
+                                        href="https://www.aussie.com.au"
+                                      >
+                                        <img
+                                          decoding="async"
+                                          src="wp-content/uploads/2021/02/16.jpg"
+                                          class="img-responsive"
+                                          alt="portfolio"
+                                        />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="botom-thumbnail"  style="color: black;">
+                                  <h4 class="maintitle" style="color: black;">
+                                    Aussie Finance And Home Loans
+                                  </h4>
+                                  <p class="separator" style="color: black;">
+                                    Finance Mortagage Provider In Australlia
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-34c36a0 elementor-section-stretched resume text-center pt-60 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="34c36a0"
+            data-element_type="section"
+            id="resume"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3a464a9"
+                data-id="3a464a9"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-e50e0c7 elementor-widget elementor-widget-keira-main-title"
+                    data-id="e50e0c7"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="section-title">
+                          <h2>resume</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-abd3d00 elementor-widget elementor-widget-keira-resume"
+                    data-id="abd3d00"
+                    data-element_type="widget"
+                    data-widget_type="keira-resume.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-4 resume-item">
+                            <div class="resume-info selected text-left r-mb-30">
+                              <h4 class="maintitle">Experience.</h4>
+                              <p class="separator">
+                                Worked in more than 5+ international companies and many personal projects and some successfull projects are as follows
+                              </p>
+                              <div class="res-line"></div>
+                              <ul class="res-list">
+                                <li>
+                                  Frontend Developer with React
+                                  <p class="separator">
+                                    Cmarga -> November 2023– February 2024
+                                  </p>
+                                </li>
+                                <li>
+                                  Frontend Developer (Html,Css,Js)
+                                  <p class="separator">
+                                    DFHL ( destiny finance and home loans ) ->
+                                    March 2023 – May 2023
+                                  </p>
+                                </li>
+
+                                <li>
+                                  Frontend Developer (Html,Css,Js)
+                                  <p class="separator">
+                                    Bitmoro Pvt Ltd -> September 2023– November
+                                    2023
+                                  </p>
+                                </li>
+
+                                <li >
+                                  Frontend Developer (Html,Css,Js)
+                                  <p class="separator">
+                                    Artova Solutions Pvt Ltd -> January 2023–
+                                    Present
+                                  </p>
+                                </li>
+
+                                <li>
+                                  Frontend Developer (Html,Css,Js)
+                                  <p class="separator">
+                                    Aussie Finance & Home Loans -> February
+                                    2023– May 2023
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-12 col-lg-4 resume-item">
+                            <div class="resume-info text-left r-mb-30">
+                              <h4 class="maintitle">Education.</h4>
+                              <p class="separator"></p>
+                              <div class="res-line"></div>
+                              <ul class="res-list">
+                                <li>
+                                  Bachelor Degree - BSC(hons) in Computing
+                                  <p class="separator">
+                                    Softwarica College of IT and E-Commerce
+                                    Affilated By Cooventry University March
+                                    2023– Present
+                                  </p>
+                                </li>
+                                <li>
+                                  +2 Higher School Degree
+                                  <p class="separator">
+                                    Padmodaye Model Secondary
+                                    School,bharatpur-18,Dang 2021 - 2023
+                                  </p>
+                                </li>
+
+                                <li>
+                                  School Degree
+                                  <p class="separator">
+                                    Sunlight Model Secondary School,Lamahi,Dang,
+                                    2017 - 2021
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-12 col-lg-4 resume-item">
+                            <div class="resume-info text-left">
+                              <h4 class="maintitle">Speciality.</h4>
+                              <p class="separator">
+                                To an English person, it will seem like
+                                simplified English, as a skeptical Cambridge
+                                friend of mine.
+                              </p>
+                              <div class="res-line"></div>
+                              <ul class="res-list">
+                                <li>
+                                  HTML,Css & Js
+                                  <p class="separator">
+                                    Designing dynamic web experiences with HTML,
+                                    CSS, and JS expertise, evolving over 2+
+                                    productive years.
+                                  </p>
+                                </li>
+                                <li>
+                                  React Js
+                                  <p class="separator">
+                                    Crafting interfaces with React, honing
+                                    skills for 1.2 transformative years.
+                                  </p>
+                                </li>
+
+                                <li>
+                                  Node Js
+                                  <p class="separator">
+                                    Architecting robust backends with Node.js,
+                                    mastering intricacies over 1+ years.
+                                  </p>
+                                </li>
+
+                                <li>
+                                  MySql & Mongo Db
+                                  <p class="separator">
+                                    Full Expertise in navigating data realms
+                                    with MongoDB and SQL prowess, seasoned
+                                    expertise.m
+                                  </p>
+                                </li>
+
+                                <li>
+                                  Python & Django
+                                  <p class="separator">
+                                    Harnessing Python prowess, sculpting Django
+                                    magic, seasoned in their fusion.
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-6d95589 elementor-section-stretched team pt-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="6d95589"
+            data-element_type="section"
+            id="team"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f595ad2"
+                data-id="f595ad2"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-17f12e5 elementor-widget elementor-widget-keira-main-title"
+                    data-id="17f12e5"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container"></div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-63f1f87 elementor-widget elementor-widget-keira-team"
+                    data-id="63f1f87"
+                    data-element_type="widget"
+                    data-widget_type="keira-team.default"
+                  >
+                    <div class="elementor-widget-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-0dd9f34 elementor-section-stretched journal text-left pt-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="0dd9f34"
+            data-element_type="section"
+            id="journal"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-90c34e4"
+                data-id="90c34e4"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-9a7e0db elementor-widget elementor-widget-keira-main-title"
+                    data-id="9a7e0db"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <!-- <div class="container">
+            <div class="section-title">
+                <h2>Recent Blogs</h2>
+            </div>
+        </div> -->
+
+                      <!-- </div>
+				</div>
+				<div class="elementor-element elementor-element-41dc00d elementor-widget elementor-widget-keira-blog" data-id="41dc00d" data-element_type="widget" data-widget_type="keira-blog.default">
+				<div class="elementor-widget-container"> -->
+
+                      <!-- <div class="container">
+			<div class="row">
+			    				<div class="col-md-12 col-lg-4 journal-item">
+					<div class="journal-info snip1 r-mb-30">
+						<figure>
+							<a href="lifestyle/ways-to-motivate-yourself/index.html"><img fetchpriority="high" decoding="async" width="1207" height="750" src="wp-content/uploads/2021/02/4.jpg" class="img-fluid wp-post-image" alt="" srcset="https://keira.inaikas.com/wp-content/uploads/2021/02/4.jpg 1207w, https://keira.inaikas.com/wp-content/uploads/2021/02/4-300x186.jpg 300w, https://keira.inaikas.com/wp-content/uploads/2021/02/4-1024x636.jpg 1024w, https://keira.inaikas.com/wp-content/uploads/2021/02/4-768x477.jpg 768w, https://keira.inaikas.com/wp-content/uploads/2021/02/4-60x37.jpg 60w" sizes="(max-width: 1207px) 100vw, 1207px" /></a>
+						</figure>
+						<div class="journal-txt">
+							<a href="lifestyle/ways-to-motivate-yourself/index.html">
+								<h4 class="maintitle">Ways To Motivate Yourself</h4>
+							</a>
+							<div class="separator"><p>Ways To Motivate Yourself. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod &#8230;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-12 col-lg-4 journal-item">
+					<div class="journal-info snip1 r-mb-30">
+						<figure>
+							<a href="wordpress/create-a-wordpress-theme/index.html"><img decoding="async" width="750" height="750" src="wp-content/uploads/2021/02/5.jpg" class="img-fluid wp-post-image" alt="" srcset="https://keira.inaikas.com/wp-content/uploads/2021/02/5.jpg 750w, https://keira.inaikas.com/wp-content/uploads/2021/02/5-300x300.jpg 300w, https://keira.inaikas.com/wp-content/uploads/2021/02/5-150x150.jpg 150w, https://keira.inaikas.com/wp-content/uploads/2021/02/5-60x60.jpg 60w" sizes="(max-width: 750px) 100vw, 750px" /></a>
+						</figure>
+						<div class="journal-txt">
+							<a href="wordpress/create-a-wordpress-theme/index.html">
+								<h4 class="maintitle">Create a WordPress Theme</h4>
+							</a>
+							<div class="separator"><p>Create a WordPress Theme. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod &#8230;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-12 col-lg-4 journal-item">
+					<div class="journal-info snip1 r-mb-30">
+						<figure>
+							<a href="design/top-graphic-design-topics/index.html"><img decoding="async" width="750" height="750" src="wp-content/uploads/2021/02/6.jpg" class="img-fluid wp-post-image" alt="" srcset="https://keira.inaikas.com/wp-content/uploads/2021/02/6.jpg 750w, https://keira.inaikas.com/wp-content/uploads/2021/02/6-300x300.jpg 300w, https://keira.inaikas.com/wp-content/uploads/2021/02/6-150x150.jpg 150w, https://keira.inaikas.com/wp-content/uploads/2021/02/6-60x60.jpg 60w" sizes="(max-width: 750px) 100vw, 750px" /></a>
+						</figure>
+						<div class="journal-txt">
+							<a href="design/top-graphic-design-topics/index.html">
+								<h4 class="maintitle">Top Graphic Design Topics</h4>
+							</a>
+							<div class="separator"><p>Top Graphic Design Topics. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod &#8230;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+							</div>
+		</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-2b55111 elementor-section-stretched contact pt-90 pb-90 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+            data-id="2b55111"
+            data-element_type="section"
+            id="contact"
+            data-settings='{"stretch_section":"section-stretched"}'
+          >
+            <div class="elementor-container elementor-column-gap-no">
+              <div
+                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9a0eabc"
+                data-id="9a0eabc"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-2914dc4 elementor-widget elementor-widget-keira-main-title"
+                    data-id="2914dc4"
+                    data-element_type="widget"
+                    data-widget_type="keira-main-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="section-title">
+                          <h2>Get In Touch</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-84bf450 elementor-widget elementor-widget-keira-cf7-shortcode"
+                    data-id="84bf450"
+                    data-element_type="widget"
+                    data-widget_type="keira-cf7-shortcode.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-4">
+                            <div class="infcontactfull">
+                              <div class="contact-block text-center">
+                                <h4 class="maintitle">EMAIL</h4>
+                                <span class="text-lowercase"
+                                  >sangitpokhrel@artovasolutions.com</span
+                                >
+                                <span class="text-lowercase"
+                                  >artovasolutions@gmail.com</span
+                                >
+                              </div>
+                              <div class="contact-block text-center br-lr">
+                                <h4 class="maintitle">CALL ME</h4>
+                                <span>(+977) 9868618385</span>
+                                <span>(+977) 9827691222(whatsapp)</span>
+                              </div>
+                              <div class="contact-block text-center">
+                                <h4 class="maintitle">ADDRESS</h4>
+                                <span>Maitidevi, Arniko Rd. Ghattekulo-29</span>
+                                <span>Kathmandu, Nepal</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 col-lg-8">
+                            <div class="contact-formone">
+                              <div
+                                id="registration"
+                                class="form-inline contact-form"
+                              >
+                                <div
+                                  class="wpcf7 no-js"
+                                  id="wpcf7-f283-p441-o1"
+                                  lang="en-US"
+                                  dir="ltr"
+                                >
+                                  <div class="screen-reader-response">
+                                    <p
+                                      role="status"
+                                      aria-live="polite"
+                                      aria-atomic="true"
+                                    ></p>
+                                    <ul></ul>
+                                  </div>
+                                  <!-- <form method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="283" />
+<input type="hidden" name="_wpcf7_version" value="5.8.7" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f283-p441-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="441" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="form-group">
+			<p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Username *" value="" type="text" name="your-name" /></span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<p><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="E-mail *" value="" type="email" name="your-email" /></span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<p><span class="wpcf7-form-control-wrap" data-name="your-tel"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Phone" value="" type="text" name="your-tel" /></span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="form-group">
+			<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="Message" name="your-message"></textarea></span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<p><button type="submit" id="submit" class="btn btn-default hvr-shutter-in-horizontal"><i class="fa fa-send"></i>Send Message</button>
+		</p>
+	</div>
+</div><p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="87"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form> -->
+
+                                  <form
+                                    id="contactForm"
+                                    class="wpcf7-form init"
+                                    aria-label="Contact form"
+                                    novalidate="novalidate"
+                                    data-status="init"
+                                  >
+                                    <div style="display: none">
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7"
+                                        value="283"
+                                      />
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7_version"
+                                        value="5.8.7"
+                                      />
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7_locale"
+                                        value="en_US"
+                                      />
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7_unit_tag"
+                                        value="wpcf7-f283-p441-o1"
+                                      />
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7_container_post"
+                                        value="441"
+                                      />
+                                      <input
+                                        type="hidden"
+                                        name="_wpcf7_posted_data_hash"
+                                        value=""
+                                      />
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="form-group">
+                                          <p>
+                                            <span
+                                              class="wpcf7-form-control-wrap"
+                                              data-name="your-name"
+                                              ><input
+                                                size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                aria-required="true"
+                                                aria-invalid="false"
+                                                placeholder="Username *"
+                                                value=""
+                                                type="text"
+                                                name="your-name"
+                                            /></span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="form-group">
+                                          <p>
+                                            <span
+                                              class="wpcf7-form-control-wrap"
+                                              data-name="your-email"
+                                              ><input
+                                                size="40"
+                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                                                aria-required="true"
+                                                aria-invalid="false"
+                                                placeholder="E-mail *"
+                                                value=""
+                                                type="email"
+                                                name="your-email"
+                                            /></span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="form-group">
+                                          <p>
+                                            <span
+                                              class="wpcf7-form-control-wrap"
+                                              data-name="your-tel"
+                                              ><input
+                                                size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                aria-required="true"
+                                                aria-invalid="false"
+                                                placeholder="Phone"
+                                                value=""
+                                                type="text"
+                                                name="your-tel"
+                                            /></span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <p>
+                                            <span
+                                              class="wpcf7-form-control-wrap"
+                                              data-name="your-message"
+                                            >
+                                              <textarea
+                                                cols="40"
+                                                rows="10"
+                                                class="wpcf7-form-control wpcf7-textarea form-control"
+                                                aria-invalid="false"
+                                                placeholder="Message"
+                                                name="your-message"
+                                              ></textarea>
+                                            </span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <button
+                                            type="submit"
+                                            id="submitBtn"
+                                            class="btn btn-default hvr-shutter-in-horizontal"
+                                          >
+                                            <i class="fa fa-send"></i>Send
+                                            Message
+                                          </button>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </form>
+
+                                  <div
+                                    id="statusMessage"
+                                    style="display: none"
+                                  ></div>
+
+                                  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                                  <script>
+                                    emailjs.init("lOVxkBCA5wVw_F4Lr"); // Replace "your_user_id_here" with your EmailJS user ID
+
+                                    document
+                                      .getElementById("contactForm")
+                                      .addEventListener(
+                                        "submit",
+                                        function (event) {
+                                          event.preventDefault();
+
+                                          // Send email
+                                          emailjs
+                                            .sendForm(
+                                              "service_xvosrfu",
+                                              "template_5jl2wr1",
+                                              "#contactForm"
+                                            )
+
+                                            .then(
+                                              function (response) {
+                                                console.log(
+                                                  "Email sent successfully:",
+                                                  response
+                                                );
+                                                document.getElementById(
+                                                  "statusMessage"
+                                                ).style.display = "block";
+                                                document.getElementById(
+                                                  "statusMessage"
+                                                ).innerText =
+                                                  "Message sent successfully!";
+                                                document
+                                                  .getElementById("contactForm")
+                                                  .reset();
+                                                setTimeout(function () {
+                                                  document.getElementById(
+                                                    "statusMessage"
+                                                  ).style.display = "none";
+                                                }, 3000);
+                                              },
+                                              function (error) {
+                                                console.error(
+                                                  "Email sending failed:",
+                                                  error
+                                                );
+                                                document.getElementById(
+                                                  "statusMessage"
+                                                ).style.display = "block";
+                                                document.getElementById(
+                                                  "statusMessage"
+                                                ).innerText =
+                                                  "Failed to send message. Please try again later.";
+                                                setTimeout(function () {
+                                                  document.getElementById(
+                                                    "statusMessage"
+                                                  ).style.display = "none";
+                                                }, 3000);
+                                              }
+                                            );
+                                        }
+                                      );
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="socials-media text-center">
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href="https://facebook.com/sangit.artova"
+                                ><i class="fa fa-facebook"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                              <a href="https://instagram.com/aw,.sike"
+                                ><i class="fa fa-instagram"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="single-navigation"></div>
+
+        <div id="footer" class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="copyright">
+                  <span
+                    >© Copyrights Sangit Pokhrel 2024. All Rights
+                    Reserved.</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 initialdisp">
+                <div id="news" class="news">
+                  <div
+                    id="mc4wp_form_widget-1"
+                    class="form-inline widget_mc4wp_form_widget"
+                  >
+                    <script>
+                      (function () {
+                        window.mc4wp = window.mc4wp || {
+                          listeners: [],
+                          forms: {
+                            on: function (evt, cb) {
+                              window.mc4wp.listeners.push({
+                                event: evt,
+                                callback: cb,
+                              });
+                            },
+                          },
+                        };
+                      })();
+                    </script>
+                    <!-- Mailchimp for WordPress v4.9.11 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                    <form
+                      id="mc4wp-form-1"
+                      class="mc4wp-form mc4wp-form-696"
+                      method="post"
+                      data-id="696"
+                      data-name="keira"
+                    >
+                      <div class="mc4wp-form-fields">
+                        <span>Newsletter Signup(N/A)</span>
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            name="EMAIL"
+                            class="enter-email email form-control"
+                            placeholder="Email"
+                          />
+                          <button
+                            type="submit"
+                            value="Subscribe"
+                            class="btn btn-default submit button btn btn-blue signup-button"
+                          >
+                            <i class="fa fa-envelope"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <label style="display: none !important"
+                        >Leave this field empty if you're human:
+                        <input
+                          type="text"
+                          name="_mc4wp_honeypot"
+                          value=""
+                          tabindex="-1"
+                          autocomplete="off" /></label
+                      ><input
+                        type="hidden"
+                        name="_mc4wp_timestamp"
+                        value="1708877790"
+                      /><input
+                        type="hidden"
+                        name="_mc4wp_form_id"
+                        value="696"
+                      /><input
+                        type="hidden"
+                        name="_mc4wp_form_element_id"
+                        value="mc4wp-form-1"
+                      />
+                      <div class="mc4wp-response"></div>
+                    </form>
+                    <!-- / Mailchimp for WordPress Plugin -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </main>
+      <!-- start Back to top button -->
+      <a class="top-link hide" href="#" id="js-top">
+        <i class="fa fa-angle-up"></i>
+        <span class="screen-reader-text">Back to top</span>
+      </a>
+      <!-- End Back to top button -->
+
+      <!-- start overlay nav -->
+      <div class="cd-overlay-nav">
+        <span></span>
+      </div>
+      <div class="cd-overlay-content">
+        <span></span>
+      </div>
+      <!-- End overlay nav -->
+    </section>
+    <script>
+      (function () {
+        function maybePrefixUrlField() {
+          const value = this.value.trim();
+          if (value !== "" && value.indexOf("http") !== 0) {
+            this.value = "http://" + value;
+          }
+        }
+
+        const urlFields = document.querySelectorAll(
+          '.mc4wp-form input[type="url"]'
+        );
+        for (let j = 0; j < urlFields.length; j++) {
+          urlFields[j].addEventListener("blur", maybePrefixUrlField);
+        }
+      })();
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/contact-form-7/includes/swv/js/index38d6.js?ver=5.8.7"
+      id="swv-js"
+    ></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+      /* <![CDATA[ */
+      var wpcf7 = {
+        api: {
+          root: "https:\/\/keira.inaikas.com\/wp-json\/",
+          namespace: "contact-form-7\/v1",
+        },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/contact-form-7/includes/js/index38d6.js?ver=5.8.7"
+      id="contact-form-7-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/popper.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="popperjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/bootstrap.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="bootstrapjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/velocity.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="velocityjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/navtoogleac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="navtooglejs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/TweenMax.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="TweenMaxjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/jquery.magnific-popupac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="magnificpopupjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/maginficpopupac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="popupjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/jquery.nicescroll.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="nicescrolljs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/customac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="mainjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/keira/js/cursorac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="cursorjs-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/comment-reply.minac18.js?ver=e958f168a43ce617ce982ec1c51b630c"
+      id="comment-reply-js"
+      async="async"
+      data-wp-strategy="async"
+    ></script>
+    <script
+      type="text/javascript"
+      defer
+      src="wp-content/plugins/mailchimp-for-wp/assets/js/forms433d.js?ver=4.9.11"
+      id="mc4wp-forms-api-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/elementor/assets/js/webpack.runtime.min34a7.js?ver=3.19.2"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/elementor/assets/js/frontend-modules.min34a7.js?ver=3.19.2"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+      id="elementor-waypoints-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2"
+      id="jquery-ui-core-js"
+    ></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+      /* <![CDATA[ */
+      var elementorFrontendConfig = {
+        environmentMode: {
+          edit: false,
+          wpPreview: false,
+          isScriptDebug: false,
+        },
+        i18n: {
+          shareOnFacebook: "Share on Facebook",
+          shareOnTwitter: "Share on Twitter",
+          pinIt: "Pin it",
+          download: "Download",
+          downloadImage: "Download image",
+          fullscreen: "Fullscreen",
+          zoom: "Zoom",
+          share: "Share",
+          playVideo: "Play Video",
+          previous: "Previous",
+          next: "Next",
+          close: "Close",
+          a11yCarouselWrapperAriaLabel:
+            "Carousel | Horizontal scrolling: Arrow Left & Right",
+          a11yCarouselPrevSlideMessage: "Previous slide",
+          a11yCarouselNextSlideMessage: "Next slide",
+          a11yCarouselFirstSlideMessage: "This is the first slide",
+          a11yCarouselLastSlideMessage: "This is the last slide",
+          a11yCarouselPaginationBulletMessage: "Go to slide",
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobile Portrait",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: true,
+            },
+            mobile_extra: {
+              label: "Mobile Landscape",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: false,
+            },
+            tablet: {
+              label: "Tablet Portrait",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: true,
+            },
+            tablet_extra: {
+              label: "Tablet Landscape",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: false,
+            },
+            laptop: {
+              label: "Laptop",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: false,
+            },
+            widescreen: {
+              label: "Widescreen",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: false,
+            },
+          },
+        },
+        version: "3.19.2",
+        is_static: false,
+        experimentalFeatures: {
+          e_optimized_assets_loading: true,
+          additional_custom_breakpoints: true,
+          block_editor_assets_optimize: true,
+          "ai-layout": true,
+          "landing-pages": true,
+          e_image_loading_optimization: true,
+          e_global_styleguide: true,
+        },
+        urls: {
+          assets:
+            "https:\/\/keira.inaikas.com\/wp-content\/plugins\/elementor\/assets\/",
+        },
+        swiperClass: "swiper-container",
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+        },
+        post: {
+          id: 441,
+          title:
+            "keira%20%E2%80%93%20Personal%20Portfolio%20WordPress%20Theme",
+          excerpt: "",
+          featuredImage:
+            "https:\/\/keira.inaikas.com\/wp-content\/uploads\/2021\/02\/6.jpg",
+        },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/elementor/assets/js/frontend.min34a7.js?ver=3.19.2"
+      id="elementor-frontend-js"
+    ></script>
+  </body>
+
+  <!-- Mirrored from keira.inaikas.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Feb 2024 16:17:01 GMT -->
+</html>
